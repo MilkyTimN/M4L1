@@ -31,6 +31,7 @@ class SecondFragment : Fragment() {
     private fun getData() = with(binding) {
         tvUsername.text = args.user.name
         tvEmail.text = args.user.email
+        tvPassword.text = args.user.password.toString()
     }
 
 

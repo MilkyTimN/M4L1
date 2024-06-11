@@ -31,12 +31,17 @@ class MainFragment : Fragment() {
 
     private fun setUpListener() {
         binding.btnSend.setOnClickListener {
-            val user = User(binding.inputLayoutUsername.editText?.text.toString(),
+            val user = User(
+                binding.inputLayoutUsername.editText?.text.toString(),
                 binding.inputLayoutEmail.editText?.text.toString(),
-                binding.inputLayoutPassword.editText?.text.toString().toInt())
+                binding.inputLayoutPassword.editText?.text.toString().toInt()
+            )
 
-            findNavController().navigate(MainFragmentDirections.actionMainFragmentToSecondFragment(user
-            ))
+            findNavController().navigate(
+                MainFragmentDirections.actionMainFragmentToSecondFragment(
+                    user
+                )
+            )
         }
     }
 

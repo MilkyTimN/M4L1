@@ -27,5 +27,14 @@
         android:textSize="40sp"
         tools:text="@string/from_email" />
 
+    <TextView
+        android:id="@+id/tv_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        tools:text="@string/from_password" />
 
 </LinearLayout>
